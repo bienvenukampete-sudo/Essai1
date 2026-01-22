@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titre de la tâche">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTaskTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Priorité:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radioPriorityHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔴 Haute"
+            android:textColor="#EF5350"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/radioPriorityMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🟠 Moyenne"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:checked="true"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/radioPriorityLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🟢 Basse"
+            android:textColor="#66BB6A"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+    </RadioGroup>
+
+</LinearLayout>
