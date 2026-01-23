@@ -1,24 +1,25 @@
 package com.example.essai1;
-    import android.graphics.Color;
 
-    public enum Priority {
-        HIGH("Haute", Color.parseColor("#EF5350")),
-        MEDIUM("Moyenne", Color.parseColor("#FF9800")),
-        LOW("Basse", Color.parseColor("#66BB6A"));
+import android.graphics.Color;
 
-        private final String label;
-        private final int color;
+public enum Priority {
+    HIGH("Haute", Color.parseColor("#EF5350")),
+    MEDIUM("Moyenne", Color.parseColor("#FF9800")),
+    LOW("Basse", Color.parseColor("#66BB6A"));
 
-        Priority(String label, int color) {
-            this.label = label;
-            this.color = color;
-        }
+    private final String label;
+    private final int color;
 
-        public String getLabel() {
-            return label;
-        }
-
-        public int getColor() {
-            return color;
-        }
+    Priority(String label, int color) {
+        this.label = label;
+        this.color = color;
     }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public int getColor() {
+        return color;
+    }
+}
